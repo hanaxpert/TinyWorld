@@ -1,0 +1,30 @@
+{
+    "role-templates": [
+        {
+            "description": "Role for viewing data",
+            "name": "tinyworldView",
+            "scope-references": [
+                "$XSAPPNAME.view"
+            ]
+        },
+        {
+            "description": "Role for creating data",
+            "name": "tinyworldCreate",
+            "scope-references": [
+                "$XSAPPNAME.create",
+                "$XSAPPNAME.view"
+            ]
+        }
+    ],
+    "scopes": [
+        {
+            "description": "View data",
+            "name": "$XSAPPNAME.view"
+        },
+        {
+            "description": "Create data",
+            "name": "$XSAPPNAME.create"
+        }
+    ],
+    "xsappname": "tinyworld"
+}
